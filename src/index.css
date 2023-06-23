@@ -1,0 +1,160 @@
+ /* Reset CSS */
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+h1, h2, h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar-logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  display: flex;
+}
+
+.navbar-menu a {
+  margin-left: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Services Section */
+.services {
+  margin-top: 40px;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.service-item img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* CV Section */
+.cv {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.cv p {
+  margin-bottom: 20px;
+}
+
+.cv-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Contact Section */
+.contact {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact p {
+  margin-bottom: 20px;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-logo {
+    margin-bottom: 10px;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .navbar-menu a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
