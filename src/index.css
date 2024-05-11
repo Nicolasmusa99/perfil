@@ -133,3 +133,48 @@ footer {
 footer p {
   margin: 0;
 }
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 10px; /* Reducir el relleno del contenedor en dispositivos móviles */
+  }
+
+  .navbar-menu {
+    flex-direction: column; /* Cambiar a columna en dispositivos móviles */
+    align-items: center; /* Centrar elementos en dispositivos móviles */
+  }
+
+  .navbar-menu a {
+    margin: 5px 0; /* Ajustar márgenes en dispositivos móviles */
+  }
+
+  .services,
+  .cv,
+  .contact {
+    padding: 20px; /* Ajustar el relleno en dispositivos móviles */
+  }
+
+  .service-item {
+    flex-direction: column; /* Cambiar a columna en dispositivos móviles */
+    align-items: center; /* Centrar elementos en dispositivos móviles */
+  }
+
+  .service-item img {
+    width: 100%; /* Ajustar la imagen al ancho del contenedor en dispositivos móviles */
+    margin: 0 0 20px 0; /* Ajustar márgenes de la imagen en dispositivos móviles */
+  }
+
+  .service-item h3 {
+    text-align: center; /* Centrar texto en dispositivos móviles */
+  }
+
+  .cv-button,
+  .contact-button {
+    display: block; /* Cambiar a bloque para ocupar todo el ancho disponible en dispositivos móviles */
+    width: 100%; /* Ajustar ancho al 100% en dispositivos móviles */
+    margin-bottom: 10px; /* Agregar espacio entre los botones en dispositivos móviles */
+  }
+}
+
+
